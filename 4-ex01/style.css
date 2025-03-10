@@ -1,0 +1,21 @@
+.learn-more {
+    background-image: url('./assets/sea.webp');
+}
+
+.dream-destination, .learn-more {
+    background-color: #00000060;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+}
+
+.dream-destination {
+    background-image: url('./assets/beach.webp');
+    height: 25rem;
+}
+
+.rounded-img {
+    width: 14vw;
+    height: 14vw;
+}

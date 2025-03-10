@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes do Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-md bg-primary">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">
+                LOGO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Sobre</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contato</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Produtos</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Suporte</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Minha Conta
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+   <main class="container-fluid text-center mt-5">
+    <div class="py-5 mx-auto w-75">
+        <h1>Usando componentes do Bootstrap</h1>
+        <p class="fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus non, alias autem reiciendis veritatis sunt iure minus optio aperiam sequi quidem accusantium amet quo aliquid quia, vero a praesentium soluta.</p>
+
+        <a href="#" class="btn btn-primary btn-lg">Call to Action!</a>
+
+        <button type="button" href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#modal1">Open Modal!</button>
+
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-4">Você abriu o Modal!</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae saepe voluptate quibusdam? Distinctio non ex maxime sapiente obcaecati laboriosam officiis culpa, repudiandae recusandae excepturi animi sit officia facere corrupti?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   </main> 
+
+   <section class="py-5">
+        <h2 class="text-center">Cards no Bootstrap</h2>
+
+        <div class="d-flex justify-content-center gap-3">
+            <div class="card product-card" >
+                <img src="https://unsplash.it/120" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Título do card</h3>
+                    <p class="card-subtitle mb-2 text-secondary">Subtítulo do card</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quaerat, neque voluptatum hic tenetur dolorem. Delectus, dolorem magni? Dolores blanditiis dignissimos cumque odit odio alias repellendus commodi culpa debitis quae.</p>
+                </div>
+            </div>
+    
+            <div class="card product-card" >
+                <div class="card-body">
+                    <h3>Título do card</h3>
+                </div>
+            </div>
+    
+            <div class="card product-card" >
+                <div class="card-body">
+                    <h3>Título do card</h3>
+                </div>
+            </div>
+    
+            <div class="card product-card" >
+                <div class="card-body">
+                    <h3>Título do card</h3>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <section class="container-fluid">
+    <h2>Componente de acordeão</h2>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

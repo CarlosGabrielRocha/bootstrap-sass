@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+p {
+    margin-top: $spacing-sm;
+}
+
+section {
+    padding: $spacing-sm;
+}
+
+/* Aninhamento */
+
+.container {
+    padding: $spacing-sm $spacing-lg;
+
+    p {
+        margin-top: $spacing-sm * 2; /* Usando calculando valores */
+    }
+}
+

@@ -1,0 +1,13 @@
+@use 'variables' as *;
+@use 'buttons';
+@use 'forms';
+@use 'layouts';
+
+body {
+    background-color: $color-dark;
+    color: $color-light;
+    font-family: $font-sans;
+}
+
+
+

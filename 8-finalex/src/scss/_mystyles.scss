@@ -1,0 +1,52 @@
+@use "sass:map";
+@import "variables.scss";
+@import "maps.scss";
+
+i {
+    width: 1em;
+}
+
+.btn {
+    border-radius: map-get($default-radius, "button"); 
+}
+
+.form-control {
+    border-radius: map-get($default-radius, "input");
+    min-width: 7rem;
+}
+
+.card {
+    border-radius: map-get($default-radius, "card");
+
+    .navigation a {
+        margin: $spacer / 2.5 $spacer;
+    }
+}
+
+.feed-container {
+    border-radius: map-get($default-radius, "card");
+}
+
+.btn-invisible {
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: var(--#{$prefix}body-bg);
+    }
+}
+
+footer {
+    margin-top: 13rem;
+}
+
+@media screen and (max-width: 991px) {
+    .card {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    * {
+        font-size: 0.8rem;
+    }
+}

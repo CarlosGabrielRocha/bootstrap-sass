@@ -1,0 +1,54 @@
+/* Tema claro e escuro */
+
+$prefix: dh-; // Costumizando o prefixo das variáveis do bootstrap
+
+//
+
+// Você pode utilizar as variáveis de cores que o bootstrap utiliza para costumizar tudo de forma
+// mais direta.
+
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #1e2328;
+$black:    #000;
+
+$primary:       #36cbf1;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-300;
+$dark:          $gray-900;
+
+$spacer: 1.25rem;
+$body-bg: $gray-300;
+
+$box-shadow: 0 .25rem .25rem rgba($black, .1);
+$box-shadow-lg: 0 .5rem 1rem rgba($black, .15);
+
+$card-cap-bg: rgba( var(--#{prefix}body-color-rgb), .8);  // .bs-body-color-rbg
+
+$dropdown-min-width: 16rem;
+$dropdown-item-padding-y: $spacer * .5;
+
+$modal-content-bg: var(--#{$prefix}tertiary-bg);
+$modal-content-border-radius: 1rem;
